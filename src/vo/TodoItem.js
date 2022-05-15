@@ -59,6 +59,24 @@ class TodoItem {
     return sourceDate === targetDate;
   };
 
+  updateTask = (task) => {
+    this._task = task;
+  };
+
+  setComplete = () => {
+    this._completed = true;
+  };
+
+  unsetComplete = () => {
+    this._completed = false;
+  };
+
+  equalsDayOfCreatedAt = (date) => {
+    const sourceDate = new Date(this._createdAt).setHours(0, 0, 0, 0);
+    const targetDate = new Date(date).setHours(0, 0, 0, 0);
+    return sourceDate === targetDate;
+  };
+
   get id() {
     return this._id;
   }

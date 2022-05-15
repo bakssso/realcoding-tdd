@@ -62,7 +62,10 @@ class TodoList {
     if (targetTodoItemIndex === -1) return;
     this._items.splice(targetTodoItemIndex, 1);
   };
+<<<<<<< HEAD
 
+=======
+>>>>>>> ea9d85336ebae4eff43cdcb70a8dd72c36cc66db
 }
 
 export default TodoList;
